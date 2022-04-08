@@ -1,4 +1,4 @@
-#🙈 Masking User Private Information
+# Masking User Private Information 🙈
 
 Pivony Text anonymization is a tool to hide users potential identification information including: <br>
 1. Emails
@@ -14,6 +14,7 @@ You should install requirements in a [virtual environment](https://docs.python.o
 First, create a virtual environment with the version of Python you're going to use and activate it.
 
 Then, you will need to install packages from `requirements.txt`
+<br>
 ```bash
 # install requirements
 pip install -r requirements.txt
@@ -23,16 +24,19 @@ To process any file you need to know:
 1. File type accepted is "csv"
 2. You need to place 1 or more files inside input_files/
 3. Your text column should be "Verbatim"
+### RUN
+To immediately use the script run this
 <br>
-To immediately use the script run this:
 ```bash
+# Change directory
 cd code/
-# run the bash script by using
+# run script run.sh
 ./run.sh
 ```
+<br>
 ## Outputs
 The script output is the files generated: <br> Files will have same name and contain the same original columns except for the text column that will be renamed as "Masked" and text will be replaced with the masked version. <br>
 all private information will be converted to `*****`
 
-## Licence ##
+## Licence
 Copyright (c) 2022, Pivony All rights reserved.
