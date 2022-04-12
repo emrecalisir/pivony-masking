@@ -42,8 +42,11 @@ def main():
       ################################
       #      read file               #
       ################################
-      filename = i.split("/")[-1]
-      if ".csv" in i.split("/")[-1]:
+      if "/" in i:
+        filename = i.split("/")[-1]
+      else:
+        filename = i.split("\\")[-1]
+      if ".csv" in filename:
           #read file
           try:
             df = pd.read_csv(i)

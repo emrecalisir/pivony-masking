@@ -7,16 +7,37 @@ Pivony Text anonymization is a tool to hide users potential identification infor
 4. Names
 
 This tool is only supporting Turkish language 🇹🇷
-
-## Install Requirements
-### With pip
-You should install requirements in a [virtual environment](https://docs.python.org/3/library/venv.html). If you're unfamiliar with Python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
-First, create a virtual environment with the version of Python you're going to use and activate it.
-
-Then, you will need to install packages from `requirements.txt`
 <br>
+If you are running on Windows this guide is meant for you.
+
+## Installation for Windows Users
+
+1- First step is to install python 
+from this [link](https://www.python.org/downloads/release/python-3104/) <br> To check your installation open your command Prompt and run this:
 ```bash
-# install requirements
+python -V
+```
+The expected output is the installed python version
+<br>
+2- Install virtual environment:
+```bash
+#install virtual env with
+pip install virtualenv
+```
+3- Create a virtual environment 
+open your commant Prompt again
+```bash
+#navigate to the project folder
+cd folder_path/
+#create a virtual env with name <env_name>
+python -m venv env_name
+```
+4- Activate the virtual environment by:
+```bash
+.\env_name\Scripts\activate
+```
+5- Install all requirements
+```bash
 pip install -r requirements.txt
 ```
 ## Quick tour
@@ -28,12 +49,10 @@ To process any file you need to know:
 To immediately use the script run this
 <br>
 ```bash
-# Change directory
 cd code/
-# run script run.sh
-./run.sh
+python main.py
 ```
-<br>
+
 ## Outputs
 The script output is the files generated: <br> Files will have same name and contain the same original columns except for the text column that will be renamed as "Masked" and text will be replaced with the masked version. <br>
 all private information will be converted to `*****`
