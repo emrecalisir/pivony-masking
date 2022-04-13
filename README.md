@@ -46,9 +46,17 @@ To process any file you need to know:
 2. You need to place 1 or more files inside input_files/
 3. Your text column should be "Verbatim"
 ### RUN
+⚠️ Reminder everytime you will run the code you need to activate virtual env:
+```bash
+#navigate to the project folder
+cd folder_path/
+.\env_name\Scripts\activate
+```
+
 To immediately use the script run this
 <br>
 ```bash
+#navigate to code folder
 cd code/
 python main.py
 ```
