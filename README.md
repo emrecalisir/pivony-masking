@@ -53,6 +53,8 @@ cd folder_path/
 .\env_name\Scripts\activate
 ```
 
+Note: in your first run the script may take some 
+time to load the models used for the masking operations <br> 
 To immediately use the script run this
 <br>
 ```bash

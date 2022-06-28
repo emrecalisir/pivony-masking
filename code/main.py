@@ -85,7 +85,7 @@ def main():
       #drop original column
       df = df.drop([data_col],axis=1)
       #save new file
-      df.to_csv(os.path.join(parent_dir,"output_files/"+filename))
+      df.to_csv(os.path.join(parent_dir,"output_files/"+filename),index=False,encoding="utf-8-sig")
       logger.info(f"Checking {filename} finished with {masked_lines_counter}/{processed_lines} lines masked")
   except Exception as e:
     logger.error(f"Main function failed with error {e}")
