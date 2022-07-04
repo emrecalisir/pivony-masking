@@ -31,7 +31,7 @@ ner=pipeline('ner', model=model, tokenizer=tokenizer)
 
 def main():
   try:
-    data_col = "verbatim"
+    data_col = "Verbatim"
     #read all files in input_files
     files = glob.glob(os.path.join(parent_dir,"input_files/*"))
     if len(files) == 0:
