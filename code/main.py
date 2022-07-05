@@ -46,10 +46,10 @@ def main():
       ################################
       #      read file               #
       ################################
-      if "/" in i:
-        filename = i.split("/")[-1]
+      if "/" in file:
+        filename = file.split("/")[-1]
       else:
-        filename = i.split("\\")[-1]
+        filename = file.split("\\")[-1]
 
       logger.info(f"reading file {filename} started")
       print(f"reading file {filename} started")
