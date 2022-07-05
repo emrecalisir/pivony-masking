@@ -46,7 +46,7 @@ def ner_mask(text,ner):
       to_mask.append(i["word"])
 
   for i in to_mask:
-    text = text.replace(i,"*****")
+    text = text.replace(i,"*")
   return text
 
 
